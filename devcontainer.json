@@ -1,7 +1,6 @@
 {
     "name": "default-container",
     "dockerFile": "Dockerfile",
-    "remoteUser": "vscode",
     "extensions": [
         "2gua.rainbow-brackets",
         "chrislajoie.vscode-modelines",
