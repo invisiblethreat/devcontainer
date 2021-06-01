@@ -1,0 +1,7 @@
+FROM debian:buster-slim
+
+RUN apt-get update -y && apt-get upgrade -y && apt-get install -y \
+    curl bash sudo vim-nox git wget apt-utils base zsh
+
+# Programming language specific components will be included afer this point
+

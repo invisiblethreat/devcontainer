@@ -1,0 +1,30 @@
+{
+    "name": "default-container",
+    "dockerFile": "Dockerfile",
+    "remoteUser": "vscode",
+    "extensions": [
+        "2gua.rainbow-brackets",
+        "chrislajoie.vscode-modelines",
+        "cschleiden.vscode-github-actions",
+        "DavidAnson.vscode-markdownlint",
+        "jeff-hykin.better-dockerfile-syntax",
+        "mohsen1.prettify-json",
+        "monokai.theme-monokai-pro-vscode",
+        "ms-azuretools.vscode-docker",
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-toolsai.jupyter",
+        "ms-vscode-remote.remote-containers",
+        "RandomFractalsInc.vscode-data-preview",
+        "stkb.rewrap",
+        "wholroyd.jinja",
+        "eamodio.gitlens"
+    ],
+    "mounts": [
+        "source=${localEnv:HOME}/.ssh,target=/home/swalsh/.ssh,type=bind,consistency=cached",
+        "source=${localEnv:HOME}/.aws,target=/home/swalsh/.aws,type=bind,consistency=cached",
+        "source=${localEnv:HOME}/downloads,target=/home/swalsh/downloads,type=bind,consistency=cached",
+        "source=${localEnv:HOME}/.gitconfig,target=/home/swalsh/.gitconfig,type=bind,consistency=cached",
+        "source=${localEnv:HOME}/.gitconfig.local,target=/home/swalsh/.gitconfig.local,type=bind,consistency=cached"
+    ]
+}

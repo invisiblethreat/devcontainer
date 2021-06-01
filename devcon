@@ -1,0 +1,34 @@
+#!/bin/bash
+
+DC_JSON="devcontainer.json"
+DC_BASE="$HOME/git/devcontainer"
+TARGET=".devcontainer"
+BASE="Dockerfile-debian"
+PL=""
+
+if [ -z $1 ]; then
+  echo "Provide a language target"
+  printf "Current language targets:\n\t- python\n"
+  exit 1
+fi
+
+if [ "$1" == "python" ]; then
+  PL="python.include"
+fi
+
+
+if [ "$PL" == "" ]; then
+  echo "No language target matched."
+fi
+
+if [ -e $TARGET ]; then
+  rm -rf $TARGET
+fi
+
+mkdir $TARGET
+cd $TARGET
+cp $DC_BASE/$DC_JSON $DC_JSON
+sed -i '' "s/default-container/$1-devcon/" $DC_JSON
+cp $DC_BASE/$BASE Dockerfile
+cat $DC_BASE/$PL >> Dockerfile
+
