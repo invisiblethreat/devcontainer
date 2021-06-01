@@ -5,10 +5,10 @@ contains Dockerfiles for development environments that I use.
 
 ## Refrences
 
-- [Ian Nelson's article][https://www.iannelson.dev/vscode/the-magic-of-vscode/]
-- [Remote-Containers VSCode plugin][https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers]
-- [devcontainer.json Reference][https://code.visualstudio.com/docs/remote/devcontainerjson-reference]
-- [Getting started with devcontainers][https://code.visualstudio.com/docs/remote/containers-tutorial]
+- [Ian Nelson's article](https://www.iannelson.dev/vscode/the-magic-of-vscode/)
+- [Remote-Containers VSCode plugin](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+- [devcontainer.json Reference](https://code.visualstudio.com/docs/remote/devcontainerjson-reference)
+- [Getting started with devcontainers](https://code.visualstudio.com/docs/remote/containers-tutorial)
 
 
 ## `devcontainer.json`
